@@ -17,6 +17,6 @@ for _ in range(int(input())):
 sorted_records = sorted(studentRecords, key=lambda l: l[1], reverse=False)
 second_lowest_score = get_second_lowest_score(sorted_records)
 
-for x in sorted_records:
+for x in reversed(sorted_records):
     if x[1] == second_lowest_score:
         print(x[0])
